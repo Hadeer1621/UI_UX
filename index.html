@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style_2.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <article class="content-wrapper">
+            <section class="todo-list-wrapper">
+                <h2>To Do List</h2>
+                <div class="input-container">
+                    <input type="text" id="taskInput" placeholder="Enter a task" />
+                    <div class="input-container">
+                        <input type="date" id="taskDate" />
+                        <input type="time" id="taskTime" />
+                        <button>Add Task</button> <!-- Removed onclick attribute -->
+                    </div>
+                </div>
+                <ul id="taskList"></ul>
+            </section>
+            <aside class="right-sections">
+                <section class="notes-section">
+                    <h2>Notes</h2>
+                    <textarea class="text-content" id="notesContent" placeholder="Write your notes here..."></textarea>
+                </section>
+                <section class="focus-section">
+                    <h2>Focus</h2>
+                    <textarea class="text-content" id="focusContent" placeholder="Write your focus points here..."></textarea>
+                </section>
+                <section class="remeber-section">
+                    <h2>Remember</h2>
+                    <textarea class="text-content" id="rememberContent" placeholder="Write your rember points here..."></textarea>
+                </section>
+            </aside>
+        </article>
+    </div>
+    <script src="script_todo.js"></script>
+</body>
+</html>
+
